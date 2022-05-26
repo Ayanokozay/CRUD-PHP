@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CRUD Produk dengan gambar - Gilacoding</title>
+    <title>TOKO BANG ZAY</title>
     <style type="text/css">
       * {
         font-family: "Trebuchet MS";
@@ -46,8 +46,12 @@
     </style>
   </head>
   <body>
-    <center><h1>Data Produk</h1><center>
+    <center><h1>DAFTAR SERAGAM DAN BAJU</h1><center>
     <center><a href="tambah_produk.php">+ &nbsp; Tambah Produk</a><center>
+  <h1><form method="GET" action="index.php" style="text-align: center;">
+		<input type="text" name="kata_cari" value="<?php if(isset($_GET['kata_cari'])) { echo $_GET['kata_cari']; } ?>"  />
+		<button type="submit">Cari</button>
+	</form></h1>
     <br/>
     <table>
       <thead>
